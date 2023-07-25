@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Películas</title>
+  <link rel="stylesheet" href="peliculas.css">
+</head>
+
+<body>
+
+  <nav>
+    <a href="Index.html" id="link-index">Inicio</a>
+    <a href="Carta.html" id="link-cartas">Cartica</a>
+    <a href="flip.html" id="link-trivias">Librito</a>
+    <a href="poemas.html" id="link-generador-poemas">Generador de Poemas</a>
+    <a href="mensajitos.html" id="link-generador-mensajitos">Generador de Mensajitos</a>
+  </nav>
+
+  <div class="container">
+    <h1>Formulario de Películas</h1>
+    <h2>Imagen</h2>
+    <form id="formularioPelicula" enctype="multipart/form-data">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="anio">Año:</label>
+      <input type="text" id="anio" name="anio" required>
+
+      <label for="director">Director:</label>
+      <input type="text" id="director" name="director" required>
+
+      <label for="descripcion">Descripción:</label>
+      <input type="text" id="descripcion" name="descripcion" required>
+
+      <label for="imagenURL">URL de la imagen:</label>
+      <input type="text" id="imagenURL" name="imagenURL">
+
+      <!-- Aquí se agregarán los campos del formulario -->
+      <input type="submit" value="Guardar Película">
+    </form>
+
+    <div id="peliculasGuardadas"></div>
+  </div>
+  <script src="peliculas.js"></script>
+
+</body>
+
+</html>
